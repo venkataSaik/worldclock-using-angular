@@ -1,0 +1,18 @@
+<div class="cointainer">
+
+  <div class="title">
+    <h1>WORLD CLOCK</h1>
+  </div>
+  <h1 id="user">Enter the city:</h1>
+  <input type="text" class="city" [(ngModel)]="city">
+  <br>
+  <button class="submit" (click)='getClockData()'>Submit</button>
+  <div class="error">{{errorMessage}}</div>
+  <div class="tfull">
+    <div class="display">
+      <p>{{cityname}}</p>
+      <p>{{time}}</p>
+      <p>{{FullDate}}</p>
+    </div>
+  </div>
+</div>
